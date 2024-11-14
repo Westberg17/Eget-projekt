@@ -20,6 +20,7 @@ h1{
 
 h2{
     text-align:center;
+    font-family:"EB Garamond", serif;
 }
 
 #banner{
@@ -201,9 +202,6 @@ h2{
     border-radius: 10px;
 }
 
-.rubrikfärg{
-    color:black;
-}
 
 form{
     max-width: 20%;
@@ -241,11 +239,13 @@ input[type="submit"]{
     border-radius: 4px;
     font-size: large;
     cursor: pointer;
+    font-family:"EB Garamond", serif;
 }
 
 input[type="submit"]:hover{
     background-color: #0080ff;
     transition:0.5s ease;
+    font-family:"EB Garamond", serif;
 }
 
 .registrera{
