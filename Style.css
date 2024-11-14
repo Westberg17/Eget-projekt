@@ -21,7 +21,7 @@ h1{
 #banner{
     text-align:center;
     font-size:60px;
-    color:lightblue;
+    color:#0080ff;
     text-decoration:none;
 }
 
@@ -36,7 +36,7 @@ h1{
 
 #banner > a{
     text-decoration:none;
-    color:lightblue;
+    color:#0080ff;
 }
 
 #banner > a:hover{
@@ -146,7 +146,7 @@ h1{
     display: flex;
     overflow-x: hidden;
     flex-direction: column;
-    background: lightblue;
+    background:#0080ff9d;
     padding: 25px 20px;
     transition: all 0.3s ease;
     z-index: 1;
