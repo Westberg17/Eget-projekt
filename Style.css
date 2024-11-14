@@ -29,6 +29,12 @@ h1{
     color:lightblue;
 }
 
+#banner > a:hover{
+    text-decoration:none;
+    color:blue;
+    box-shadow:3px 3px 10px lightblue;
+}
+
 #blocken {
     width:calc(100% - 260px);
     margin-left:260px;
