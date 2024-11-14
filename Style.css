@@ -9,8 +9,9 @@ header{
 }
 
 body{
-   background-color:white;
+    background-color:white;
     margin:0;
+    font-family:"EB Garamond", serif;
 }
 
 h1{
@@ -206,7 +207,7 @@ label {
     display: block;
     margin-bottom: 10px;
     font-size: large;
-    color: white;
+    color: black;
 }
 
 input {
@@ -214,8 +215,9 @@ input {
     padding: 10px;
     margin-top: 5px;
     border: 1px solid lightgrey;
-    border-radius: 4px;
-    font-size: large;
+    border-radius: 3px;
+    font-size:large;
+
 }
 
 input[type="submit"] {
@@ -230,7 +232,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: lightblue;
+    background-color: #0080ff;
 }
 
 .registrera {
@@ -244,7 +246,7 @@ input[type="submit"]:hover {
     font-size: 11px;
     text-decoration: underline;
     text-decoration-color: lightblue;
-    color: teal;
+    color: #0080ff;
     cursor: pointer;
     font-weight: 800;
 }
