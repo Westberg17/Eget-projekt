@@ -5,6 +5,7 @@
 header{
     background-color:white;
     font-family:"EB Garamond", serif;
+    text-decoration:none;
 }
 
 body{
@@ -19,6 +20,12 @@ h1{
 #banner{
     text-align:center;
     font-size:60px;
+    color:lightblue;
+    text-decoration:none;
+}
+
+#banner > a{
+    text-decoration:none;
     color:lightblue;
 }
 
