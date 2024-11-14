@@ -274,11 +274,6 @@ input[type="submit"]:hover{
     gap:10px;
 }
 
-.google-login-button{
-    border: 2px solid #747474;
-}
-
-
 .BankID_ikon{
     max-width: 24px;
     max-height: 24px;
@@ -302,3 +297,16 @@ input[type="submit"]:hover{
     width: auto;
     height: auto;
 }   
+
+.bankid-låda{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom: 2px solid #0080ff;
+}
+
+.instruktioner{
+    padding-left:20px;
+    text-align:left;
+    margin-left:20px;
+}

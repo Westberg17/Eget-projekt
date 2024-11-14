@@ -45,18 +45,23 @@
     </div>
 
     <form action="#" method="POST">
-        <h2 class="rubrikfärg">BankID med QR-kod</h2>
+        <div class="bankid-låda">
+            <h2 class="rubrikfärg">BankID med QR-kod</h2>
+            <img src="logo1-default.png" alt="Mobilt BankID ikon" class="BankID_ikon" />
+        </div>
         <div class="qr">
             <div class="qrBild">
                 <img src="Untitled.png" alt="Mobilt BankID QR-kod" class="qrKod"/>
             </div>
-        </div>
-        <a href="BankID.html">
-            <div class="BankID_knapp">
-                    <img src="logo1-default.png" alt="Mobilt BankID ikon" class="BankID_ikon" />
-                <span>Logga in med Mobilt BankID</span>
+            <div>
+                <ol class="instruktioner">
+                    <li>Öppna appen för BankID.</li>
+                    <li>Tryck på QR-symbolen i appen för BankID.</li>
+                    <li>Rikta kameran mot QR-koden.</li>
+                    <li>Följ instruktionerna i appen för att logga in.</li>
+                </ol>
             </div>
-        </a>
+        </div>
     </form>
 </body>
 </html>
