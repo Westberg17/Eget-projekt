@@ -50,8 +50,8 @@ h2{
 }
 
 #blocken{
-    width:calc(100% - 260px);
-    margin-left:260px;
+    width:calc(100% - 320px);
+    margin-left:320px;
     display: flex;
     justify-content: space-evenly;
     align-items:center;
