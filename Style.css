@@ -131,8 +131,9 @@ h1{
 }
 
 .sidorubrik {
-    color: white;
+    color: transparent;
     background-color: transparent;
+    transition: color 0.3s ease;
 }
 
 .sidebar {
@@ -152,6 +153,10 @@ h1{
 
 .sidebar:hover {
     width: 260px;
+}
+
+.sidebar:hover .sidorubrik {
+    color:white;
 }
 
 .sidebarLänkar {
