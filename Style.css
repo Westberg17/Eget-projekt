@@ -279,6 +279,7 @@ input[type="submit"]:hover{
     align-items: center;
     font-size: medium;
     gap:10px;
+    width:95%;
 }
 
 .BankID_ikon{
@@ -316,4 +317,35 @@ input[type="submit"]:hover{
     padding-left:20px;
     text-align:left;
     margin-left:20px;
+}
+
+.qr{
+    border-bottom: 2px solid #0080ff;
+}
+
+.avbryt{
+    margin-top:5px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    border:0.5px solid rgb(146, 145, 145);
+    box-shadow:1px 1px 2px grey;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:35%;
+    font-size: larger;
+    background-color:#0080ffa2;
+    width:30%;
+}
+
+.avbryt:hover{
+    background-color:#0080ff;
+    transition:0.5 ease;
+}
+
+.avbryt > a{
+    text-decoration:none;
+    color:white;
 }
