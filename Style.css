@@ -182,3 +182,8 @@ h1{
     background: white;
     border-radius: 10px;
 }
+
+.active{
+    background-color: #555;
+    border-radius:10px;
+}
