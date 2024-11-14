@@ -24,6 +24,15 @@ h1{
     text-decoration:none;
 }
 
+.sidebar-header > a {
+    text-decoration:none;
+}
+
+.sidebar-header > a:hover {
+    text-decoration:none;
+    color:#0080ff;
+}
+
 #banner > a{
     text-decoration:none;
     color:lightblue;
@@ -31,8 +40,7 @@ h1{
 
 #banner > a:hover{
     text-decoration:none;
-    color:blue;
-    box-shadow:3px 3px 10px lightblue;
+    color:#0080ff;
 }
 
 #blocken {
