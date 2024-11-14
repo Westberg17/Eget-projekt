@@ -187,3 +187,64 @@ h1{
     background-color: #555;
     border-radius:10px;
 }
+
+.rubrikfärg{
+    color:black;
+}
+
+form {
+    max-width: 400px;
+    margin:auto;
+    background-color:white;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: large;
+    color: white;
+}
+
+input {
+    width: 95%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    font-size: large;
+}
+
+input[type="submit"] {
+    width: 95%;
+    background-color: rgb(170, 225, 243, 0.8);
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-size: large;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: lightblue;
+}
+
+.registrera {
+    margin-top: 10px;
+    font-size: 10px;
+    color: #747474;
+}
+
+.registreraLänk {
+    margin-left: 1px;
+    font-size: 11px;
+    text-decoration: underline;
+    text-decoration-color: lightblue;
+    color: teal;
+    cursor: pointer;
+    font-weight: 800;
+}
