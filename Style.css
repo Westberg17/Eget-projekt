@@ -105,7 +105,7 @@ h1{
     height:50px;
     border:2px solid rgb(247, 245, 245);
     border-radius: 50%;
-    background-color:lightblue;
+    background-color:#0080ff;
     justify-content:center;
     align-items:center;
     box-shadow:1px 1px 10px rgb(249, 248, 248);
@@ -120,7 +120,7 @@ h1{
 }
 
 .fab:hover{
-    box-shadow:1px 1px 10px lightblue;
+    box-shadow:1px 1px 10px #0080ff;
     transition:1s;
     transform:scale(1.2);
 }
@@ -240,7 +240,7 @@ input[type="submit"]:hover {
 .registrera {
     margin-top: 10px;
     font-size: 10px;
-    color: lightblue;
+    color: #0080ff;
     font-size:medium;
 }
 
