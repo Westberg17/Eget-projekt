@@ -233,12 +233,14 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #0080ff;
+    transition:0.5s ease;
 }
 
 .registrera {
     margin-top: 10px;
     font-size: 10px;
     color: #747474;
+    font-size:medium;
 }
 
 .registreraLänk {
@@ -249,4 +251,5 @@ input[type="submit"]:hover {
     color: #0080ff;
     cursor: pointer;
     font-weight: 800;
+    font-size:medium;
 }
