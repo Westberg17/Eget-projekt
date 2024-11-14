@@ -194,6 +194,13 @@ h2{
     border-radius:10px;
 }
 
+
+.sidebarLänkar li a.active:hover{
+    color: white;
+    background-color: #0080ff;
+    border-radius: 10px;
+}
+
 .rubrikfärg{
     color:black;
 }
