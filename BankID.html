@@ -45,23 +45,12 @@
     </div>
 
     <form action="#" method="POST">
-        <h2 class="rubrikfärg">Logga in</h2>
-        <div>
-            <label>
-                Personnummer:
-                <input type="text" name="Pnr" placeholder="00000000-0000" pattern="[0-9]{8}-[0-9]{4}" required>
-            </label>    
+        <h2 class="rubrikfärg">BankID med QR-kod</h2>
+        <div class="qr">
+            <div class="qrBild">
+                <img src="Untitled.png" alt="Mobilt BankID QR-kod" class="qrKod"/>
+            </div>
         </div>
-        <div>
-            <label>
-                Lösenord:
-                <input type="text" name="Lösenord" placeholder="*******" required>
-            </label>    
-        </div>
-        <input type="submit" value="Logga in">
-        <p class="registrera">
-            Är du inte registrerad?<a href="registrera.html"><span class="registreraLänk">Registrera dig här</span></a>
-        </p>
         <a href="BankID.html">
             <div class="BankID_knapp">
                     <img src="logo1-default.png" alt="Mobilt BankID ikon" class="BankID_ikon" />
