@@ -255,16 +255,18 @@ input[type="submit"]:hover {
 }
 
 .BankID_knapp {
-    border-radius: 20px;
+    margin-top:5px;
+    border-radius: 10px;
     box-sizing: border-box;
     padding: 10px 15px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    border:0.5px solid rgb(146, 145, 145);
+    box-shadow:1px 1px 2px grey;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 11px;
-    gap: 5px;
+    font-size: medium;
+    gap:10px;
 }
 
 .google-login-button {
