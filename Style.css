@@ -176,6 +176,7 @@ h1{
     padding: 15px 10px;
     text-decoration: none;
     transition: 0.2s ease;
+    font-size: larger;
 }
 
 .sidebarLänkar li a:hover {
