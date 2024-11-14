@@ -222,7 +222,7 @@ input {
 
 input[type="submit"] {
     width: 95%;
-    background-color: rgb(170, 225, 243, 0.8);
+    background-color: #0080ff9d;
     color: white;
     padding: 10px;
     margin-top: 10px;
@@ -239,7 +239,7 @@ input[type="submit"]:hover {
 .registrera {
     margin-top: 10px;
     font-size: 10px;
-    color: #747474;
+    color: lightblue;
     font-size:medium;
 }
 
@@ -288,4 +288,5 @@ input[type="submit"]:hover {
 
 .BankID_knapp:hover {
     background-color:rgb(233, 233, 233);
+    transition:0.5s ease;
 }
