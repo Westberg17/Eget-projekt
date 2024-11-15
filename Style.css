@@ -3,51 +3,47 @@
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
 
 .header{
-    position:relative;
-    overflow:hidden;
-    display:flex;
-    flex-wrap: nowrap;
-    justify-content: center;
+    position:relative; /*Gör att positionen är relativ till andra element i detta fall body*/
+    overflow:hidden; /*Allt innehåll som går utanför containern tas bort, del av bild*/
+    display:flex;   /*Layout som gör att barn element kan placeras olika på sidan*/
+    flex-wrap: nowrap; /*Gör att elementen i flexboxen endast visas på en rad*/
+    justify-content: center;  
     align-items:center;
     height:20%;
     min-height:300px;
     max-height:550px;
-    color:#eee;
+    color:white;
     margin-bottom:5%;
 }
   
 .header:after{
-    content:"";
+    content:""; /*skapar ett tomt element*/
     width:100%;
     height:100%;
-    position:absolute;
+    position:absolute; /*positionen är fast, alltså ändras ej beroende på andra element*/
     bottom:0;
     left:0;
-    z-index:-1;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.12) 40%,rgba(27,32,48,1) 100%);
+    z-index:-1; /*flyttar elementet bakom andra element i flex-boxen, z-index:1 hade placerat det framför*/
+    background: linear-gradient(to bottom, rgba(0,0,0,0.12) 40%,rgba(27,32,48,1) 100%); /*bakgrundsfärgen*/
 }
 
 .header:before{
-    content:"";
+    content:""; /*skapar ett tomt element*/
     width:100%;
     height:200%;
-    position:absolute;
+    position:absolute; /*positionen är fast, alltså ändras ej beroende på andra element*/
     top:0;
     left:0;
-    -webkit-backface-visibility: hidden;
-    -webkit-transform: translateZ(0); backface-visibility: hidden;
-    scale :(1.0, 1.0);
-    transform: translateZ(0);
     background:#1B2030 url(https://images.unsplash.com/photo-1571993142257-eae0b44cf0f1?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ) center no-repeat;
     background-size:100%;
-    background-attachment:fixed;
+    background-attachment:fixed; /*bakgrunden är fast, hänger ej med när man scrollar */
     animation: grow 360s  linear 10ms infinite;
-    transition:all 0.4s ease-in-out;
-    z-index:-2;
+    transition:all 0.4s ease-in-out; /*effekt när nån scrollar neråt*/
+    z-index:-2; /*flyttar elementet bakom andra element i flex-boxen, z-index:1 hade placerat det framför*/
 }
 
 .header a{
-    color:#eee;
+    color:white; 
     text-decoration:none;
 }
 
@@ -428,129 +424,167 @@ input[type="submit"]:hover{
     border-radius:10px;
 }
 
-.footer {
-    display: flex;
-    flex-flow: row wrap;
-    padding: 30px 30px 20px 30px;
-    color: #2f2f2f;
-    background-color: #d8dee4;
-    border-top: 1px solid #e5e5e5;
-  }
-  
-  .footer > * {
-    flex:  1 100%;
-  }
-  
-  .footer__addr {
-    margin-right: 1.25em;
-    margin-bottom: 2em;
-  }
-  
-  .footer__logo {
-    font-family: 'Pacifico', cursive;
-    font-weight: 400;
-    text-transform: lowercase;
-    font-size: 1.5rem;
-  }
-  
-  .footer__addr h2 {
-    margin-top: 1.3em;
-    font-size: 15px;
-    font-weight: 400;
-  }
-  
-  .nav__title {
-    font-weight: 400;
-    font-size: 15px;
-  }
-  
-  .footer address {
-    font-style: normal;
-    color: #999;
-  }
-  
-  .footer__btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 36px;
-    max-width: max-content;
-    background-color: rgb(33, 33, 33, 0.07);
-    border-radius: 100px;
-    color: #2f2f2f;
-    line-height: 0;
-    margin: 0.6em 0;
+.footer_area {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    webkit-box-shadow: 0 8px 48px 8px rgba(47, 91, 234, 0.175);
+    box-shadow: 0 8px 48px 8px rgba(47, 91, 234, 0.175);
+    padding:60px;
+}
+.footer_area .row {
+    margin-left: -25px;
+    margin-right: -25px;
+}
+.footer_area .row .col,
+.footer_area .row .col-1,
+.footer_area .row .col-10,
+.footer_area .row .col-11,
+.footer_area .row .col-12,
+.footer_area .row .col-2,
+.footer_area .row .col-3,
+.footer_area .row .col-4,
+.footer_area .row .col-5,
+.footer_area .row .col-6,
+.footer_area .row .col-7,
+.footer_area .row .col-8,
+.footer_area .row .col-9,
+.footer_area .row .col-auto,
+.footer_area .row .col-lg,
+.footer_area .row .col-lg-1,
+.footer_area .row .col-lg-10,
+.footer_area .row .col-lg-11,
+.footer_area .row .col-lg-12,
+.footer_area .row .col-lg-2,
+.footer_area .row .col-lg-3,
+.footer_area .row .col-lg-4,
+.footer_area .row .col-lg-5,
+.footer_area .row .col-lg-6,
+.footer_area .row .col-lg-7,
+.footer_area .row .col-lg-8,
+.footer_area .row .col-lg-9,
+.footer_area .row .col-lg-auto,
+.footer_area .row .col-md,
+.footer_area .row .col-md-1,
+.footer_area .row .col-md-10,
+.footer_area .row .col-md-11,
+.footer_area .row .col-md-12,
+.footer_area .row .col-md-2,
+.footer_area .row .col-md-3,
+.footer_area .row .col-md-4,
+.footer_area .row .col-md-5,
+.footer_area .row .col-md-6,
+.footer_area .row .col-md-7,
+.footer_area .row .col-md-8,
+.footer_area .row .col-md-9,
+.footer_area .row .col-md-auto,
+.footer_area .row .col-sm,
+.footer_area .row .col-sm-1,
+.footer_area .row .col-sm-10,
+.footer_area .row .col-sm-11,
+.footer_area .row .col-sm-12,
+.footer_area .row .col-sm-2,
+.footer_area .row .col-sm-3,
+.footer_area .row .col-sm-4,
+.footer_area .row .col-sm-5,
+.footer_area .row .col-sm-6,
+.footer_area .row .col-sm-7,
+.footer_area .row .col-sm-8,
+.footer_area .row .col-sm-9,
+.footer_area .row .col-sm-auto,
+.footer_area .row .col-xl,
+.footer_area .row .col-xl-1,
+.footer_area .row .col-xl-10,
+.footer_area .row .col-xl-11,
+.footer_area .row .col-xl-12,
+.footer_area .row .col-xl-2,
+.footer_area .row .col-xl-3,
+.footer_area .row .col-xl-4,
+.footer_area .row .col-xl-5,
+.footer_area .row .col-xl-6,
+.footer_area .row .col-xl-7,
+.footer_area .row .col-xl-8,
+.footer_area .row .col-xl-9,
+.footer_area .row .col-xl-auto {
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.single-footer-widget {
+    position: relative;
+    z-index: 1;
+}
+.single-footer-widget .copywrite-text a {
+    color: #747794;
     font-size: 1rem;
-    padding: 0 1.3em;
-  }
-  
-  .footer ul {
+}
+.single-footer-widget .copywrite-text a:hover,
+.single-footer-widget .copywrite-text a:focus {
+    color: #3f43fd;
+}
+.single-footer-widget .widget-title {
+    margin-bottom: 1.5rem;
+}
+.single-footer-widget .footer_menu li a {
+    color: #747794;
+    margin-bottom: 1rem;
+    display: block;
+    font-size: 1rem;
+}
+.single-footer-widget .footer_menu li a:hover,
+.single-footer-widget .footer_menu li a:focus {
+    color: #3f43fd;
+}
+.single-footer-widget .footer_menu li:last-child a {
+    margin-bottom: 0;
+}
+
+.footer_social_area {
+    position: relative;
+    z-index: 1;
+}
+.footer_social_area a {
+    border-radius: 50%;
+    height: 40px;
+    text-align: center;
+    width: 40px;
+    display: inline-block;
+    background-color: #f5f5ff;
+    line-height: 40px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin-right: 10px;
+}
+.footer_social_area a i {
+    line-height: 36px;
+}
+.footer_social_area a:hover,
+.footer_social_area a:focus {
+    color: #ffffff;
+}
+
+@-webkit-keyframes bi-cycle {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes bi-cycle {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 100%;
+    }
+}
+ol li, ul li {
     list-style: none;
-    padding-left: 0;
-  }
-  
-  .footer li {
-    line-height: 2em;
-  }
-  
-  .footer a {
-    text-decoration: none;
-  }
-  
-  .footer__nav {
-    display: flex;
-      flex-flow: row wrap;
-  }
-  
-  .footer__nav > * {
-    flex: 1 50%;
-    margin-right: 1.25em;
-  }
-  
-  .nav__ul a {
-    color: #999;
-  }
-  
-  .nav__ul--extra {
-    column-count: 2;
-    column-gap: 1.25em;
-  }
-  
-  .legal {
-    display: flex;
-    flex-wrap: wrap;
-    color: #999;
-  }
-    
-  .legal__links {
-    display: flex;
-    align-items: center;
-  }
-  
-  .heart {
-    color: #2f2f2f;
-  }
-  
-  @media screen and (min-width: 24.375em) {
-    .legal .legal__links {
-      margin-left: auto;
-    }
-  }
-  
-  @media screen and (min-width: 40.375em) {
-    .footer__nav > * {
-      flex: 1;
-    }
-    
-    .nav__item--extra {
-      flex-grow: 2;
-    }
-    
-    .footer__addr {
-      flex: 1 0px;
-    }
-    
-    .footer__nav {
-      flex: 2 0px;
-    }
-  }
+}
+
+ol, ul {
+    margin: 0;
+    padding: 0;
+}
