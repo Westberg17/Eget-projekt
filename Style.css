@@ -398,3 +398,52 @@ input[type="submit"]:hover{
     background-color:#0080ff;
     border-radius:10px;
 }
+
+.footer{
+    background-color: #b6c2ce;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    font-family: "EB Garamond", serif;
+}
+
+.låda-footer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.kolumn-footer{
+    flex: 1 1 calc(25% - 20px);
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: lightblue;
+}
+
+.footer-section p {
+    margin: 5px 0;
+}
