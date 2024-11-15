@@ -8,10 +8,8 @@
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-start;
-    align-content: flex-start;
-    height:50%;
-    min-height:400px;
+    height:20%;
+    min-height:300px;
     max-height:550px;
     color:#eee;
     margin-bottom:5%;
@@ -77,24 +75,8 @@
     box-shadow:0 8px, 0 16px
 }
 
-.logo{
-    border:2px solid #fff;
-    border-radius:3px;
-    text-decoration:none;
-    display:inline-flex;
-    align-items:center;
-    align-content:center;
-    margin:20px;
-    padding:0px 10px;
-    font-weight:900;
-    font-size:1.1em;
-    line-height:1;
-    box-sizing:border-box;
-    height:40px
-}
-
 .sides, .info{
-    flex: 0 0 auto;
+    flex: auto;
     width:50%
 }
 
@@ -103,12 +85,6 @@
     padding:15% 10% 0 10%;
     text-align:center;
     text-shadow:0 2px 3px rgba(0,0,0,0.2)
-}
-
-header{
-    background-color:white;
-    font-family:"EB Garamond", serif;
-    text-decoration:none;
 }
 
 body{
@@ -126,28 +102,11 @@ h2{
     font-family:"EB Garamond", serif;
 }
 
-#banner{
-    text-align:center;
-    font-size:60px;
-    color:#0080ff;
-    text-decoration:none;
-}
-
 .sidebar-header > a{
     text-decoration:none;
 }
 
 .sidebar-header > a:hover{
-    text-decoration:none;
-    color:#0080ff;
-}
-
-#banner > a{
-    text-decoration:none;
-    color:#0080ff;
-}
-
-#banner > a:hover{
     text-decoration:none;
     color:#0080ff;
 }
@@ -254,7 +213,7 @@ h2{
     display: flex;
     overflow-x: hidden;
     flex-direction: column;
-    background:#0080ff9d;
+    background:#0e71d4;
     padding: 25px 20px;
     transition: all 0.3s ease;
     z-index: 1;
