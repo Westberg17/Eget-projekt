@@ -415,7 +415,7 @@ input[type="submit"]:hover{
     flex-flow: row wrap;
     padding: 30px 30px 20px 30px;
     color: #2f2f2f;
-    background-color: #d8dee4;
+    background-color: white;
     border-top: 1px solid #e5e5e5;
     justify-content:bottom;
     margin-bottom:0;
