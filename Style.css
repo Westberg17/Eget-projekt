@@ -253,6 +253,7 @@ h2{
     border-radius: 10px;
 }
 
+/*Stylear aktiv flik i sidebar*/
 .active{
     background-color: #0080ff;
     border-radius:10px;
@@ -265,7 +266,7 @@ h2{
     border-radius: 10px;
 }
 
-
+/*Formulär för inloggning*/
 form{
     max-width: 20%;
     margin:auto;
@@ -330,6 +331,7 @@ input[type="submit"]:hover{
     font-size:medium;
 }
 
+/*Container för Bank-id delen*/
 .BankID_knapp{
     margin-top:5px;
     border-radius: 10px;
@@ -363,6 +365,7 @@ input[type="submit"]:hover{
     transition:0.5s ease;
 }
 
+/* När en användare valt att logga in med bankid*/
 .qrKod{
     max-width: 100%;
     max-height: 100%;
@@ -376,6 +379,7 @@ input[type="submit"]:hover{
     align-items:center;
     border-bottom: 2px solid #0080ff;
 }
+
 
 .instruktioner{
     padding-left:20px;
@@ -415,6 +419,7 @@ input[type="submit"]:hover{
     color:white;
 }
 
+/*Test av java-script*/
 .Javatest{
     display:flex;
     align-items:center;
@@ -429,6 +434,7 @@ input[type="submit"]:hover{
     border-radius:10px;
 }
 
+/*Footer styling*/
 .footer {
     display: flex;
     flex-flow: row wrap;
