@@ -48,31 +48,33 @@
         </span>
     </div>
 
-    <form action="#" method="POST">
-        <h2 class="rubrikfärg">Logga in</h2>
-        <div>
-            <label>
-                Personnummer:
-                <input type="text" name="Pnr" placeholder="00000000-0000" pattern="[0-9]{8}-[0-9]{4}" required>
-            </label>    
-        </div>
-        <div>
-            <label>
-                Lösenord:
-                <input type="text" name="Lösenord" placeholder="*******" required>
-            </label>    
-        </div>
-        <input type="submit" value="Logga in">
-        <p class="registrera">
-            Är du inte registrerad?<a href="registrera.html"><span class="registreraLänk">Registrera dig här</span></a>
-        </p>
-        <a href="BankID.html">
-            <div class="BankID_knapp">
-                    <img src="logo1-default.png" alt="Mobilt BankID ikon" class="BankID_ikon" />
-                <span>Logga in med Mobilt BankID</span>
+    <div class="LogIn">
+        <form action="#" method="POST">
+            <h2 class="rubrikfärg">Logga in</h2>
+            <div>
+                <label>
+                    Personnummer:
+                    <input type="text" name="Pnr" placeholder="00000000-0000" pattern="[0-9]{8}-[0-9]{4}" required>
+                </label>    
             </div>
-        </a>
-    </form>
+            <div>
+                <label>
+                    Lösenord:
+                    <input type="text" name="Lösenord" placeholder="*******" required>
+                </label>    
+            </div>
+            <input type="submit" value="Logga in">
+            <p class="registrera">
+                Är du inte registrerad?<a href="registrera.html"><span class="registreraLänk">Registrera dig här</span></a>
+            </p>
+            <a href="BankID.html">
+                <div class="BankID_knapp">
+                        <img src="logo1-default.png" alt="Mobilt BankID ikon" class="BankID_ikon" />
+                    <span>Logga in med Mobilt BankID</span>
+                </div>
+            </a>
+        </form>
+    </div>
     <footer class="footer">
         <div class="footer__addr">
           <h1 class="footer__logo">Something</h1>

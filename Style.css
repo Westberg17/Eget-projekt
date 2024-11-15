@@ -242,9 +242,18 @@ h2{
 }
 
 /*Formulär för inloggning*/
+
+.LogIn{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:20%;
+    margin-bottom:5%;
+}
+
 form{
-    max-width: 20%;
-    margin:auto;
+    width:20%;
+    margin:0 auto;
     background-color:white;
     padding: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -419,12 +428,12 @@ input[type="submit"]:hover{
     border-top: 1px solid #e5e5e5;
     justify-content:bottom;
     margin-bottom:0;
-    position: fixed;
+    position: relative;
     bottom:0;
     left:0;
     right:0;
     width:100%;
-    z-index: -1;
+    z-index: 0;
 }
   
 .footer > * {
