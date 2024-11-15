@@ -48,7 +48,7 @@
 }
 
 .menu{
-    display:block;
+    display:block; /*visar elementet som ett block alltså tar upp hela bredden på skärmen*/
     width:40px;
     height:30px;
     border:2px solid #fff;
@@ -60,8 +60,8 @@
 }
 
 .menu:after{
-    content:"";
-    display:block;
+    content:""; /*skapar ett tomt element*/
+    display:block; /*visar elementet som ett block alltså tar upp hela bredden på skärmen*/
     width:20px;
     height:3px;
     background:#fff;
@@ -80,7 +80,7 @@
     justify-content:center;
     text-align:center;
     text-shadow:0 2px 3px rgba(0,0,0,0.2);
-    flex:1;
+    flex:1; /*placerar elementet framför andra element*/
 }
 
 body{
@@ -98,6 +98,7 @@ h2{
     font-family:"EB Garamond", serif;
 }
 
+/*Dessa två tillhör sidebar*/
 .sidebar-header > a{
     text-decoration:none;
 }
@@ -107,6 +108,7 @@ h2{
     color:#0080ff;
 }
 
+/*Dessa är för boxarna på startsidan*/
 #blocken{
     width:calc(100% - 320px);
     margin-left:320px;
@@ -158,6 +160,7 @@ h2{
     text-align:center;
 }
 
+/*Styling för fab-knapp*/
 .fab{
     position:fixed;
     display:flex;
@@ -188,12 +191,14 @@ h2{
     transform:scale(1.2);
 }
 
+/*Stylear hela sidan*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/*Styling för sidebar*/
 .sidorubrik{
     color: transparent;
     background-color: transparent;
