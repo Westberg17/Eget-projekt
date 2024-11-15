@@ -444,6 +444,9 @@ input[type="submit"]:hover{
     border-top: 1px solid #e5e5e5;
     justify-content:bottom;
     margin-bottom:0;
+    position: relative;
+    z-index: -1;
+
   }
   
   .footer > * {
