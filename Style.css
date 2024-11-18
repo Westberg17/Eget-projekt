@@ -17,7 +17,7 @@
 }
   
 .header:after{
-    content:""; /*skapar ett tomt element*/
+    content:""; /*skapar ett tomt element2*/
     width:100%;
     height:100%;
     position:absolute; /*positionen är fast, alltså ändras ej beroende på andra element*/
