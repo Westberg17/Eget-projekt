@@ -13,7 +13,7 @@
     min-height:300px;
     max-height:550px;
     color:white;
-    margin-bottom:5%;
+    margin-bottom:6%;
 }
   
 .header:after{
@@ -34,7 +34,7 @@
     position:absolute; /*positionen är fast, alltså ändras ej beroende på andra element*/
     top:0;
     left:0;
-    background:#1B2030 url(https://images.unsplash.com/photo-1571993142257-eae0b44cf0f1?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ) center no-repeat;
+    background:#1B2030 center no-repeat;
     background-size:100%;
     background-attachment:fixed; /*bakgrunden är fast, hänger ej med när man scrollar */
     animation: grow 360s  linear 10ms infinite;
