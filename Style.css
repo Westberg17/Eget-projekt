@@ -100,7 +100,7 @@ h2{
     width:calc(100% - 320px);
     margin-left:320px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items:center;
     flex-direction:row;
     margin:0 auto;
