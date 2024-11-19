@@ -466,18 +466,6 @@ input[type="submit"]:hover{
     flex:  1 100%;
 }
   
-.footer-kontakt {
-    margin-left:3%;
-    margin-right: 1.25em;
-    margin-bottom: 2em;
-}
-  
-.footer-kontakt h2 {
-    margin-top: 1.3em;
-    font-size: 15px;
-    font-weight: 400;
-}
-  
 .footer-titel {
     font-weight: 400;
     font-size: 15px;
