@@ -7,7 +7,7 @@
         $password = $_POST['password'];
 
         
-        $validUsername = 'admin';
+        $validUsername = '20000102-0022';
         $validPassword = 'password123';
 
         if ($username === $validUsername && $password === $validPassword) {
