@@ -471,8 +471,8 @@ input[type="submit"]:hover{
 }
   
 .footer-titel {
-    font-weight: 400;
-    font-size: 15px;
+    font-weight: 500;
+    font-size: 19px;
 }
 
   
@@ -504,7 +504,7 @@ input[type="submit"]:hover{
 }
   
 .footer-lista a {
-    color: #999;
+    color: #777575;
 }
   
 @media screen and (min-width: 40.375em) {
