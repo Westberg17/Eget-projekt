@@ -10,9 +10,8 @@
 <body>
    <!--Header för varje sida-->
    <div class="header"> 
-    <div class="info">
-        <a href="Startsida.html"><h1>Mölndals Vårdcentral</h1></a>
-    </div>
+      <img src="vard.png" alt="Bakgrund" class="background-image">
+      <a href="Startsida.html"><h1>Mölndals Vårdcentral</h1></a>
     </div>
 
     <!--Sidobar för varje sida-->
@@ -49,27 +48,27 @@
     </div>
 
     <div class="LogIn">
-        <form action="#" method="POST">
+        <form method="POST" action="apitest.php">
             <h2 class="rubrikfärg">Logga in</h2>
             <div>
                 <label>
                     Personnummer:
-                    <input type="text" name="Pnr" placeholder="00000000-0000" pattern="[0-9]{8}-[0-9]{4}" required>
+                    <input type="text" name="username" placeholder="00000000-0000" pattern="[0-9]{8}-[0-9]{4}" required>
                 </label>    
             </div>
             <div>
                 <label>
                     Lösenord:
-                    <input type="text" name="Lösenord" placeholder="*******" required>
+                    <input type="password" name="password" placeholder="*******" required>
                 </label>    
             </div>
-            <input type="submit" value="Logga in">
+            <input type="submit" value="Login">
             <p class="registrera">
                 Är du inte registrerad?<a href="registrera.html"><span class="registreraLänk">Registrera dig här</span></a>
             </p>
             <a href="BankID.html">
                 <div class="BankID_knapp">
-                        <img src="logo1-default.png" alt="Mobilt BankID ikon" class="BankID_ikon" />
+                    <img src="logo1-default.png" alt="Mobilt BankID ikon" class="BankID_ikon" />
                     <span>Logga in med Mobilt BankID</span>
                 </div>
             </a>

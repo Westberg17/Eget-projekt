@@ -2,30 +2,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
 
-.header{
-    position:relative; /*Gör att positionen är relativ till andra element i detta fall body*/
-    overflow:hidden; /*Allt innehåll som går utanför containern tas bort, del av bild*/
-    display:flex;   /*Layout som gör att barn element kan placeras olika på sidan*/
-    flex-wrap: nowrap; /*Gör att elementen i flexboxen endast visas på en rad*/
-    justify-content: center;  
-    align-items:center;
-    height:20%;
-    min-height:300px;
-    max-height:550px;
-    color:white;
-    margin-bottom:5%;
+.header {
+    position: relative; 
+    overflow: hidden; 
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    min-height: 300px;
+    max-height: 550px;
+    color: white;
+    margin-bottom: 6%;
 }
-  
-.header:after{
-    content:""; /*skapar ett tomt element2*/
-    width:100%;
-    height:100%;
-    position:absolute; /*positionen är fast, alltså ändras ej beroende på andra element*/
-    bottom:0;
-    left:0;
-    z-index:-1; /*flyttar elementet bakom andra element i flex-boxen, z-index:1 hade placerat det framför*/
-    background: linear-gradient(to bottom, rgba(0,0,0,0.12) 40%,rgba(27,32,48,1) 100%); /*bakgrundsfärgen*/
+
+.background-image {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    object-fit: contain; 
+    z-index: -2; 
 }
+
+.header:after {
+    content: ""; 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.12) 40%,rgba(27,32,48,1) 100%);
+}
+
 
 .header:before{
     content:""; /*skapar ett tomt element*/
@@ -34,7 +44,7 @@
     position:absolute; /*positionen är fast, alltså ändras ej beroende på andra element*/
     top:0;
     left:0;
-    background:#1B2030 url(https://images.unsplash.com/photo-1571993142257-eae0b44cf0f1?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ) center no-repeat;
+    background:#1B2030 center no-repeat;
     background-size:100%;
     background-attachment:fixed; /*bakgrunden är fast, hänger ej med när man scrollar */
     animation: grow 360s  linear 10ms infinite;
@@ -454,49 +464,23 @@ input[type="submit"]:hover{
     flex:  1 100%;
 }
   
-.footer__addr {
+.footer-kontakt {
     margin-left:3%;
     margin-right: 1.25em;
     margin-bottom: 2em;
 }
   
-.footer__logo {
-    font-family: 'Pacifico', cursive;
-    font-weight: 400;
-    text-transform: lowercase;
-    font-size: 1.5rem;
-}
-  
-.footer__addr h2 {
+.footer-kontakt h2 {
     margin-top: 1.3em;
     font-size: 15px;
     font-weight: 400;
 }
   
-.nav__title {
+.footer-titel {
     font-weight: 400;
     font-size: 15px;
 }
-  
-.footer address {
-    font-style: normal;
-    color: #999;
-}
-  
-.footer__btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 36px;
-    max-width: max-content;
-    background-color: rgb(33, 33, 33, 0.07);
-    border-radius: 100px;
-    color: #2f2f2f;
-    line-height: 0;
-    margin: 0.6em 0;
-    font-size: 1rem;
-    padding: 0 1.3em;
-}
+
   
 .footer ul {
     list-style: none;
@@ -511,39 +495,39 @@ input[type="submit"]:hover{
     text-decoration: none;
 }
   
-.footer__nav {
+.footer-låda {
     display: flex;
     flex-flow: row wrap;
 }
   
-.footer__nav > * {
+.footer-låda > * {
     flex: 1 50%;
     margin-right: 1.25em;
 }
   
-.nav__ul a {
+.footer-lista a {
     color: #999;
 }
   
-.nav__ul--extra {
+.footer-lista--extra {
     column-count: 2;
     column-gap: 1.25em;
 }
   
 @media screen and (min-width: 40.375em) {
-    .footer__nav > * {
+    .footer-låda > * {
         flex: 1;
     }
     
-    .nav__item--extra {
+    .footer-innehåll--extra {
         flex-grow: 2;
     }
     
-    .footer__addr {
+    .footer-låda {
         flex: 1 0px;
     }
     
-    .footer__nav {
+    .footer-innehåll {
         flex: 2 0px;
     } 
 }
